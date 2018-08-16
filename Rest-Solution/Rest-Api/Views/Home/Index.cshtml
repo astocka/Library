@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 Beta. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts - Open Sans i Raleway. -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <style>
+        body
+        {
+            font-family: "Open Sans";
+        }
+        h1, h2, h3, h4, h5, h6
+        {
+            font-family: "Raleway";
+        }
+        main
+        {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Web API 1.0</a>
+            <span class="navbar-text text-white">Autor: CodersLab</span>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Web API dla projektu Mała Biblioteka.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Lista Metod</h2>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-primary">
+                                <td>Metoda</td>
+                                <td>Adres</td>
+                                <td>Typ</td>
+                                <td>Zwraca</td>
+                                <td>Opis</td>
+                                <td>Dostępna</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Read List</td>
+                                <td>/api/xxx</td>
+                                <td>Get</td>
+                                <td>Listę Obiektów</td>
+                                <td>Zwraca listę obiektów.</td>
+                                <td>Książki (books), Czytelnicy (readers), Wypożyczenia (lend).</td>
+                            </tr>
+                            <tr>
+                                <td>Read</td>
+                                <td>/api/xxx/1</td>
+                                <td>Get</td>
+                                <td>Obiekt lub Kod 404.</td>
+                                <td>Zwraca obiekt.</td>
+                                <td>Książki (books), Czytelnicy (readers).</td>
+                            </tr>
+                            <tr>
+                                <td>Create</td>
+                                <td>/api/xxx</td>
+                                <td>Post</td>
+                                <td>Kod 201 lub 409.</td>
+                                <td>Tworzy nowy obiekt.</td>
+                                <td>Książki (books), Czytelnicy (readers), Wypożyczenia (lend).</td>
+                            </tr>
+                            <tr>
+                                <td>Update</td>
+                                <td>/api/xxx/1</td>
+                                <td>Put</td>
+                                <td>Aktualizuje obiekt</td>
+                                <td>Kod 200, 204 lub 404.</td>
+                                <td>Książki (books), Czytelnicy (readers).</td>
+                            </tr>
+                            <tr>
+                                <td>Delete</td>
+                                <td>/api/xxx</td>
+                                <td>Delete</td>
+                                <td>Usuwa obiekt</td>
+                                <td>Kod 200 lub 404.</td>
+                                <td>Książki (books), Czytelnicy (readers), Wypożyczenia (lend).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Dokładne opisy metod i zwracanych kodów możesz znaleźć w dokumentacji kodu źródłowego.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <!-- Popper.js -->
+    <script src="js/popper.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap 4 Beta. -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- bootbox code  -->
+    <script src="js/bootbox.min.js" type="text/javascript"></script>
+
+    <!-- Google Web Fonts - Open Sans i Raleway. -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Font Awesome. -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Style do Edytowania. -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Library</a>
+            <span class="navbar-text text-white">Author: [Name and Surname]</span>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success" role="alert">
+                        [A place to display messages]
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Books</h1>
+                    <div class="button-group">
+                    </div>
+                    <form id="booksForm">
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input class="form-control" type="text" name="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Author</label>
+                            <input class="form-control" type="text" name="author">
+                        </div>
+                        <button class="btn btn-success btn-sm addBook" type="button"><i class="fa fa-plus"></i> Add</button>
+                    </form>
+                    <table id="booksTable" class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h1>Readers</h1>
+                    <div class="button-group">
+                    </div>
+                    <form id="readersForm">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input class="form-control" type="text" name="readerName">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Age</label>
+                            <input class="form-control" type="text" name="readerAge">
+                        </div>
+                        <button class="btn btn-success btn-sm addReader" type="button"><i class="fa fa-plus"></i> Add</button>
+                    </form>
+                    <table id="readersTable" class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h1>Lend</h1>
+                    <div class="button-group">
+                    </div>
+                    <table id="lendedBooksTable" class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Name</th>
+                                <th>Date of lend</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
